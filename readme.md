@@ -4,6 +4,9 @@ This document explains about how to Download, install and run Mono2Micro tool.
 
 ## 1. Download Mono2Micro
 
+<details><summary>CLICK ME</summary>
+
+
 ### 1.1 Download Mono2Micro CLI
 
 1. Download the `Mono2Micro-CLI.zip`
@@ -30,7 +33,11 @@ unzip Mono2Micro-Example.zip -d Mono2Micro-Example
 
 You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/mono2micro?topic=mono2micro-downloading-installing">here</a>.
 
+</details>
+
 ## 2 Install Mono2Micro trail version
+
+<details><summary>CLICK ME</summary>
 
 ### 2.1. Run the CLI
 
@@ -79,7 +86,12 @@ you may see the output like this.
 <img src="images/img-13.png">
 <img src="images/img-14.png">
 
+</details>
+
+
 ## 3. Collecting Application Data
+
+<details><summary>CLICK ME</summary>
 
 ### 3.1 Static code Analyze
 
@@ -134,9 +146,13 @@ It contains the following.
 - static analyser outputs, 
 - runtime traces logs from the business case runs 
 - use case recorder output in JSON format
+</details>
 
 
 ## 4. Creating Mircoservice Partitions
+
+<details><summary>CLICK ME</summary>
+
 
 1. Run the below command to start creating the Mircoservice partitions. 
 
@@ -161,8 +177,12 @@ mono2micro-workspace
 
 You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/mono2micro?topic=recommendations-running-ai-engine-analyze-collected-data">here</a>.
 
+</details>
 
 ## 5. Viewing Mircoservice Partitions
+
+<details><summary>CLICK ME</summary>
+
 
 ### 5.1 Open the workbench
 
@@ -228,8 +248,12 @@ Currently it shows the detailed information about the about the Custom View page
 
 You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/mono2micro?topic=viewing-partition-recommendations">here</a>.
 
+</details>
 
 ### 6. Microservices Code Generation
+
+<details><summary>CLICK ME</summary>
+
 
 1. The micorservices code can be generated using the following command.
 
@@ -242,6 +266,8 @@ The parameters are
 ```
 
 2. The microservices are created under the `microservices` folder.
+
+</details>
 
 ## Reference
 
