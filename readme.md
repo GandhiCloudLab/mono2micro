@@ -136,7 +136,7 @@ It contains the following.
 - use case recorder output in JSON format
 
 
-## 3. Creating Mircoservice Partitions
+## 4. Creating Mircoservice Partitions
 
 1. Run the below command to start creating the Mircoservice partitions. 
 
@@ -162,9 +162,9 @@ mono2micro-workspace
 You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/mono2micro?topic=recommendations-running-ai-engine-analyze-collected-data">here</a>.
 
 
-## 4. Viewing Mircoservice Partitions
+## 5. Viewing Mircoservice Partitions
 
-### 4.1 Open the workbench
+### 5.1 Open the workbench
 
 1. Run the below command start the workbench. 
 
@@ -180,7 +180,7 @@ You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/
 
 you might be seeing the partitions graph as given below.
 
-### 4.2 Views
+### 5.2 Views
 
 #### Business Logic
 
@@ -207,13 +207,13 @@ You can drag an class and create new partition as like this.
 
 <img src="images/img-26.png">
 
-### 4.3 Filter
+### 5.3 Filter
 
 1. You can apply filter to see the filtered classes.
 
 <img src="images/img-22.png">
 
-### 4.4 Details
+### 5.4 Details
 
 1. The details side panel of the workbench provides detailed information about the selected view, partition, and class.
 
@@ -229,7 +229,7 @@ Currently it shows the detailed information about the about the Custom View page
 You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/mono2micro?topic=viewing-partition-recommendations">here</a>.
 
 
-### 5. Microservices Code Generation
+### 6. Microservices Code Generation
 
 1. The micorservices code can be generated using the following command.
 
