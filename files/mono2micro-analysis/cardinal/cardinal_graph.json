@@ -1,0 +1,2332 @@
+{
+    "version": "v2.0.0r9",
+    "cardinal_modified": {
+        "nodes": [
+            {
+                "name": "ActionDecoder",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionDecoder.java",
+                "semantics": [
+                    "market_summary",
+                    "Unknown",
+                    "market_summary_glossary",
+                    "logoff"
+                ]
+            },
+            {
+                "name": "Log",
+                "group": 1,
+                "category": "Utility",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/Log.java",
+                "semantics": [
+                    "market_summary",
+                    "init",
+                    "trade_buy",
+                    "Unknown",
+                    "account",
+                    "trade_sell",
+                    "ping_servlet_cdi_manager",
+                    "register",
+                    "ping_servlet_cdi",
+                    "repopulate_db_tables",
+                    "config",
+                    "primitives",
+                    "logoff",
+                    "login",
+                    "market_summary_glossary",
+                    "recreate_db_tables",
+                    "ping_servlet_writer"
+                ],
+                "tags": [
+                    "Utility"
+                ]
+            },
+            {
+                "name": "TradeConfig",
+                "group": 1,
+                "category": "Utility",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java",
+                "semantics": [
+                    "market_summary",
+                    "init",
+                    "trade_buy",
+                    "Unknown",
+                    "account",
+                    "config",
+                    "trade_sell",
+                    "ping_servlet_cdi_manager",
+                    "register",
+                    "ping_servlet_cdi",
+                    "repopulate_db_tables",
+                    "primitives",
+                    "logoff",
+                    "login",
+                    "market_summary_glossary",
+                    "recreate_db_tables",
+                    "ping_servlet_writer"
+                ],
+                "tags": [
+                    "Utility"
+                ]
+            },
+            {
+                "name": "ActionMessage",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java",
+                "semantics": [
+                    "market_summary",
+                    "Unknown",
+                    "logoff",
+                    "market_summary_glossary"
+                ]
+            },
+            {
+                "name": "MarketSummaryWebSocket",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java",
+                "semantics": [
+                    "market_summary",
+                    "Unknown",
+                    "trade_buy",
+                    "trade_sell",
+                    "market_summary_glossary",
+                    "logoff"
+                ]
+            },
+            {
+                "name": "TradeAction",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/TradeAction.java",
+                "semantics": [
+                    "market_summary",
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "Unknown",
+                    "logoff",
+                    "register",
+                    "login",
+                    "market_summary_glossary"
+                ]
+            },
+            {
+                "name": "TradeSLSBBean",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java",
+                "semantics": [
+                    "market_summary",
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "Unknown",
+                    "logoff",
+                    "register",
+                    "login",
+                    "market_summary_glossary"
+                ]
+            },
+            {
+                "name": "MarketSummarySingleton",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java",
+                "semantics": [
+                    "market_summary",
+                    "Unknown",
+                    "ping_servlet_cdi_manager",
+                    "register",
+                    "ping_servlet_cdi",
+                    "repopulate_db_tables",
+                    "primitives",
+                    "init",
+                    "logoff",
+                    "account",
+                    "config",
+                    "ping_servlet_writer",
+                    "market_summary_glossary",
+                    "trade_buy",
+                    "recreate_db_tables"
+                ]
+            },
+            {
+                "name": "MarketSummaryDataBean",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java",
+                "semantics": [
+                    "market_summary",
+                    "Unknown",
+                    "ping_servlet_cdi_manager",
+                    "register",
+                    "ping_servlet_cdi",
+                    "repopulate_db_tables",
+                    "primitives",
+                    "init",
+                    "logoff",
+                    "account",
+                    "config",
+                    "ping_servlet_writer",
+                    "market_summary_glossary",
+                    "trade_buy",
+                    "recreate_db_tables"
+                ]
+            },
+            {
+                "name": "QuoteDataBean",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/entities/QuoteDataBean.java",
+                "semantics": [
+                    "market_summary",
+                    "trade_buy",
+                    "Unknown",
+                    "trade_sell",
+                    "ping_servlet_cdi_manager",
+                    "register",
+                    "ping_servlet_cdi",
+                    "repopulate_db_tables",
+                    "primitives",
+                    "init",
+                    "logoff",
+                    "account",
+                    "config",
+                    "ping_servlet_writer",
+                    "market_summary_glossary"
+                ]
+            },
+            {
+                "name": "RecentStockChangeList",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java",
+                "semantics": [
+                    "market_summary",
+                    "Unknown",
+                    "trade_buy",
+                    "trade_sell",
+                    "logoff",
+                    "market_summary_glossary"
+                ]
+            },
+            {
+                "name": "TradeWebContextListener",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeWebContextListener.java",
+                "semantics": [
+                    "init",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "TradeDirect",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java",
+                "semantics": [
+                    "init",
+                    "repopulate_db_tables",
+                    "recreate_db_tables"
+                ]
+            },
+            {
+                "name": "OrdersAlertFilter",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/OrdersAlertFilter.java",
+                "semantics": [
+                    "init",
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "market_summary",
+                    "Unknown",
+                    "logoff",
+                    "register",
+                    "login"
+                ]
+            },
+            {
+                "name": "JSFLoginFilter",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java",
+                "semantics": [
+                    "init",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "TradeAppServlet",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java",
+                "semantics": [
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "market_summary",
+                    "Unknown",
+                    "logoff",
+                    "register",
+                    "login"
+                ]
+            },
+            {
+                "name": "TradeServletAction",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java",
+                "semantics": [
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "market_summary",
+                    "Unknown",
+                    "logoff",
+                    "register",
+                    "login"
+                ]
+            },
+            {
+                "name": "AccountProfileDataBean",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/entities/AccountProfileDataBean.java",
+                "semantics": [
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "repopulate_db_tables",
+                    "init",
+                    "logoff",
+                    "register",
+                    "login"
+                ]
+            },
+            {
+                "name": "AccountDataBean",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/entities/AccountDataBean.java",
+                "semantics": [
+                    "trade_buy",
+                    "account",
+                    "trade_sell",
+                    "repopulate_db_tables",
+                    "init",
+                    "logoff",
+                    "register",
+                    "login"
+                ]
+            },
+            {
+                "name": "OrderDataBean",
+                "group": 2,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/entities/OrderDataBean.java",
+                "semantics": [
+                    "trade_buy",
+                    "trade_sell",
+                    "market_summary",
+                    "repopulate_db_tables",
+                    "init"
+                ]
+            },
+            {
+                "name": "HoldingDataBean",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/entities/HoldingDataBean.java",
+                "semantics": [
+                    "trade_buy",
+                    "trade_sell",
+                    "repopulate_db_tables",
+                    "init"
+                ]
+            },
+            {
+                "name": "FinancialUtils",
+                "group": 1,
+                "category": "Utility",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java",
+                "semantics": [
+                    "trade_buy",
+                    "Unknown",
+                    "trade_sell",
+                    "ping_servlet_cdi_manager",
+                    "market_summary",
+                    "register",
+                    "ping_servlet_cdi",
+                    "repopulate_db_tables",
+                    "primitives",
+                    "init",
+                    "login",
+                    "logoff",
+                    "account",
+                    "config",
+                    "ping_servlet_writer",
+                    "recreate_db_tables"
+                ],
+                "tags": [
+                    "Utility"
+                ]
+            },
+            {
+                "name": "TradeConfigServlet",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java",
+                "semantics": [
+                    "config",
+                    "repopulate_db_tables",
+                    "recreate_db_tables"
+                ]
+            },
+            {
+                "name": "PingServletCDIBeanManagerViaJNDI",
+                "group": 5,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDIBeanManagerViaJNDI.java",
+                "semantics": [
+                    "ping_servlet_cdi_manager"
+                ]
+            },
+            {
+                "name": "PingInterceptor",
+                "group": 5,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingInterceptor.java",
+                "semantics": [
+                    "ping_servlet_cdi_manager",
+                    "ping_servlet_cdi"
+                ]
+            },
+            {
+                "name": "PingCDIBean",
+                "group": 5,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java",
+                "semantics": [
+                    "ping_servlet_cdi_manager",
+                    "ping_servlet_cdi"
+                ]
+            },
+            {
+                "name": "TradeBuildDB",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java",
+                "semantics": [
+                    "repopulate_db_tables",
+                    "recreate_db_tables"
+                ]
+            },
+            {
+                "name": "MDBStats",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/MDBStats.java",
+                "semantics": [
+                    "repopulate_db_tables",
+                    "trade_buy",
+                    "trade_sell",
+                    "recreate_db_tables"
+                ]
+            },
+            {
+                "name": "RunStatsDataBean",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/beans/RunStatsDataBean.java",
+                "semantics": [
+                    "repopulate_db_tables"
+                ]
+            },
+            {
+                "name": "KeySequenceDirect",
+                "group": 1,
+                "category": "Utility",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/direct/KeySequenceDirect.java",
+                "semantics": [
+                    "repopulate_db_tables"
+                ],
+                "tags": [
+                    "Utility"
+                ]
+            },
+            {
+                "name": "KeyBlock",
+                "group": 3,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/KeyBlock.java",
+                "semantics": [
+                    "repopulate_db_tables"
+                ]
+            },
+            {
+                "name": "PingServlet2Servlet",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2Servlet.java",
+                "semantics": [
+                    "ping_servlet2_include"
+                ]
+            },
+            {
+                "name": "PingBean",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingBean.java",
+                "semantics": [
+                    "ping_servlet2_include"
+                ]
+            },
+            {
+                "name": "PingServlet2ServletRcv",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java",
+                "semantics": [
+                    "ping_servlet2_include"
+                ]
+            },
+            {
+                "name": "DTStreamer3MDB",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTStreamer3MDB.java",
+                "semantics": [
+                    "trade_buy",
+                    "trade_sell"
+                ]
+            },
+            {
+                "name": "TimerStat",
+                "group": 0,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/TimerStat.java",
+                "semantics": [
+                    "trade_buy",
+                    "trade_sell"
+                ]
+            },
+            {
+                "name": "PingServlet",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet.java",
+                "semantics": [
+                    "Unknown",
+                    "ping_servlet"
+                ]
+            },
+            {
+                "name": "ExplicitGC",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java",
+                "semantics": [
+                    "explicit_gc"
+                ]
+            },
+            {
+                "name": "PingServletCDI",
+                "group": 5,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDI.java",
+                "semantics": [
+                    "ping_servlet_cdi"
+                ]
+            },
+            {
+                "name": "PingEJBLocalDecorator",
+                "group": 5,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingEJBLocalDecorator.java",
+                "semantics": [
+                    "ping_servlet_cdi"
+                ]
+            },
+            {
+                "name": "PingEJBLocal",
+                "group": 5,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingEJBLocal.java",
+                "semantics": [
+                    "ping_servlet_cdi"
+                ]
+            },
+            {
+                "name": "PingServletWriter",
+                "group": 4,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletWriter.java",
+                "semantics": [
+                    "ping_servlet_writer"
+                ]
+            },
+            {
+                "name": "JsonMessage",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonMessage.java",
+                "semantics": []
+            },
+            {
+                "name": "JsonEncoder",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java",
+                "semantics": []
+            },
+            {
+                "name": "JsonDecoder",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java",
+                "semantics": []
+            },
+            {
+                "name": "PingSession3Object",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession3Object.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet30Async",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java",
+                "semantics": []
+            },
+            {
+                "name": "PingReentryServlet",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingReentryServlet.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2IncludeRcv",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2IncludeRcv.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServletLargeContentLength",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java",
+                "semantics": []
+            },
+            {
+                "name": "PingWebSocketJson",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketJson.java",
+                "semantics": []
+            },
+            {
+                "name": "PingSession2",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession2.java",
+                "semantics": []
+            },
+            {
+                "name": "PingJDBCWrite",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Jsp",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2Jsp.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2JNDI",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2JNDI.java",
+                "semantics": []
+            },
+            {
+                "name": "PingSession3",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession3.java",
+                "semantics": []
+            },
+            {
+                "name": "PingWebSocketBinary",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java",
+                "semantics": []
+            },
+            {
+                "name": "PingCDIJSFBean",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIJSFBean.java",
+                "semantics": []
+            },
+            {
+                "name": "PingSession1",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession1.java",
+                "semantics": []
+            },
+            {
+                "name": "PingManagedThread",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingManagedThread.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet31AsyncRead",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet31AsyncRead.java",
+                "semantics": []
+            },
+            {
+                "name": "PingWebSocketTextAsync",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java",
+                "semantics": []
+            },
+            {
+                "name": "PingJDBCRead",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java",
+                "semantics": []
+            },
+            {
+                "name": "PingWebSocketTextSync",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextSync.java",
+                "semantics": []
+            },
+            {
+                "name": "PingJSONP",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJSONP.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet31Async",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet31Async.java",
+                "semantics": []
+            },
+            {
+                "name": "PingJDBCRead2JSP",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead2JSP.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Include",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2Include.java",
+                "semantics": []
+            },
+            {
+                "name": "PingUpgradeServlet",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java",
+                "semantics": []
+            },
+            {
+                "name": "PingManagedExecutor",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingManagedExecutor.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServletSetContentLength",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletSetContentLength.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServletCDIBeanManagerViaCDICurrent",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDIBeanManagerViaCDICurrent.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2DB",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2DB.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2PDF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2PDF.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Entity",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Entity.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2MDBQueue",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2MDBQueue.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Session2Entity2JSP",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2Entity2JSP.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Session2CMROne2Many",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2CMROne2Many.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2TwoPhase",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2TwoPhase.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2MDBTopic",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2MDBTopic.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Session2EntityCollection",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Session2Entity",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2Entity.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2SessionRemote",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2SessionRemote.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2SessionLocal",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2SessionLocal.java",
+                "semantics": []
+            },
+            {
+                "name": "PingServlet2Session2CMROne2One",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2CMROne2One.java",
+                "semantics": []
+            },
+            {
+                "name": "HoldingData",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/HoldingData.java",
+                "semantics": []
+            },
+            {
+                "name": "MarketSummaryJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/MarketSummaryJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "LoginValidator",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/LoginValidator.java",
+                "semantics": []
+            },
+            {
+                "name": "QuoteData",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/QuoteData.java",
+                "semantics": []
+            },
+            {
+                "name": "TradeConfigJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/TradeConfigJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "QuoteJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/QuoteJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "PortfolioJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/PortfolioJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderDataJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "AccountDataJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/AccountDataJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "TradeActionProducer",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/TradeActionProducer.java",
+                "semantics": []
+            },
+            {
+                "name": "TradeAppJSF",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/TradeAppJSF.java",
+                "semantics": []
+            },
+            {
+                "name": "ExternalContextProducer",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/ExternalContextProducer.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderData",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderData.java",
+                "semantics": []
+            },
+            {
+                "name": "TestServlet",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java",
+                "semantics": []
+            },
+            {
+                "name": "TradeScenarioServlet",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java",
+                "semantics": []
+            },
+            {
+                "name": "CompleteOrderThread",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/util/CompleteOrderThread.java",
+                "semantics": []
+            },
+            {
+                "name": "DTBroker3MDB",
+                "group": 6,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, project/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java",
+                "semantics": []
+            }
+        ],
+        "links": [
+            {
+                "source": "ActionDecoder",
+                "target": "Log",
+                "method": {
+                    "doTrace": 7
+                },
+                "value": 2.945
+            },
+            {
+                "source": "ActionDecoder",
+                "target": "ActionMessage",
+                "method": {
+                    "ActionMessage": 7,
+                    "doDecoding": 7
+                },
+                "value": 3.639
+            },
+            {
+                "source": "Log",
+                "target": "TradeConfig",
+                "method": {
+                    "getTrace": 9116,
+                    "getActionTrace": 91,
+                    "setTrace": 3,
+                    "setActionTrace": 3
+                },
+                "value": 10.128
+            },
+            {
+                "source": "ActionMessage",
+                "target": "Log",
+                "method": {
+                    "doTrace": 7
+                },
+                "value": 2.945
+            },
+            {
+                "source": "MarketSummaryWebSocket",
+                "target": "ActionMessage",
+                "method": {
+                    "getDecodedAction": 7
+                },
+                "value": 2.945
+            },
+            {
+                "source": "MarketSummaryWebSocket",
+                "target": "Log",
+                "method": {
+                    "doTrace": 24
+                },
+                "value": 4.178
+            },
+            {
+                "source": "MarketSummaryWebSocket",
+                "target": "TradeAction",
+                "method": {
+                    "TradeAction [overloaded_#001]": 7,
+                    "getMarketSummary": 7
+                },
+                "value": 3.639
+            },
+            {
+                "source": "MarketSummaryWebSocket",
+                "target": "MarketSummaryDataBean",
+                "method": {
+                    "toJSON": 7
+                },
+                "value": 2.945
+            },
+            {
+                "source": "MarketSummaryWebSocket",
+                "target": "RecentStockChangeList",
+                "method": {
+                    "isEmpty": 7,
+                    "stockChangesInJSON": 13,
+                    "addStockChange": 6
+                },
+                "value": 4.258
+            },
+            {
+                "source": "TradeAction",
+                "target": "Log",
+                "method": {
+                    "doTrace": 76,
+                    "doActionTrace": 91
+                },
+                "value": 6.117
+            },
+            {
+                "source": "TradeAction",
+                "target": "TradeConfig",
+                "method": {
+                    "useRemoteEJBInterface": 70,
+                    "getRunTimeMode": 7,
+                    "getRandomPriceChangeFactor": 6
+                },
+                "value": 5.418
+            },
+            {
+                "source": "TradeAction",
+                "target": "TradeSLSBBean",
+                "method": {
+                    "getMarketSummary": 7,
+                    "getClosedOrders": 17,
+                    "buy": 3,
+                    "updateQuotePriceVolume": 6,
+                    "getAccountData": 4,
+                    "getAccountProfileData": 2,
+                    "getQuote": 26,
+                    "sell": 3,
+                    "getHoldings": 5,
+                    "updateAccountProfile": 1,
+                    "logout": 1,
+                    "register": 1,
+                    "login": 2,
+                    "TradeSLSBBean": 1,
+                    "postConstruct": 1
+                },
+                "value": 5.382
+            },
+            {
+                "source": "TradeAction",
+                "target": "AccountDataBean",
+                "method": {
+                    "hashCode": 54
+                },
+                "value": 4.988
+            },
+            {
+                "source": "TradeAction",
+                "target": "QuoteDataBean",
+                "method": {
+                    "hashCode": 48
+                },
+                "value": 4.871
+            },
+            {
+                "source": "TradeAction",
+                "target": "OrderDataBean",
+                "method": {
+                    "getOrderStatus": 3,
+                    "getSymbol": 3,
+                    "getQuantity": 3
+                },
+                "value": 3.197
+            },
+            {
+                "source": "TradeAction",
+                "target": "AccountProfileDataBean",
+                "method": {
+                    "hashCode": 4
+                },
+                "value": 2.386
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "Log",
+                "method": {
+                    "doTrace": 115
+                },
+                "value": 5.744
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "MarketSummarySingleton",
+                "method": {
+                    "getMarketSummaryDataBean": 7
+                },
+                "value": 2.945
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "AccountProfileDataBean",
+                "method": {
+                    "AccountProfileDataBean [overloaded_#001]": 17,
+                    "getAccount": 13,
+                    "getUserID": 11,
+                    "getAddress": 1,
+                    "setAddress": 1,
+                    "getPassword": 1,
+                    "setPassword": 1,
+                    "getFullName": 1,
+                    "setFullName": 1,
+                    "getCreditCard": 1,
+                    "setCreditCard": 1,
+                    "getEmail": 1,
+                    "setEmail": 1,
+                    "setAccount": 1,
+                    "hashCode": 4
+                },
+                "value": 5.025
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "AccountDataBean",
+                "method": {
+                    "AccountDataBean [overloaded_#001]": 14,
+                    "getBalance": 6,
+                    "setBalance": 6,
+                    "getProfile": 6,
+                    "setProfileID": 4,
+                    "logout": 1,
+                    "setProfile": 1,
+                    "hashCode": 6,
+                    "login": 2
+                },
+                "value": 4.828
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "QuoteDataBean",
+                "method": {
+                    "QuoteDataBean [overloaded_#003]": 50,
+                    "getPrice": 30,
+                    "getOpen": 12,
+                    "setPrice": 6,
+                    "setChange": 6,
+                    "getVolume": 12,
+                    "setVolume": 6,
+                    "getSymbol": 12,
+                    "getCompanyName": 6,
+                    "getLow": 6,
+                    "getHigh": 6
+                },
+                "value": 6.023
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "TradeConfig",
+                "method": {
+                    "getOrderFee": 6,
+                    "getUpdateQuotePrices": 6,
+                    "getPublishQuotePriceChange": 6,
+                    "getLongRun": 6
+                },
+                "value": 4.178
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "OrderDataBean",
+                "method": {
+                    "OrderDataBean [overloaded_#001]": 12,
+                    "hashCode": 24,
+                    "getOrderFee": 6,
+                    "getOrderID": 6,
+                    "getQuote": 12,
+                    "isCompleted": 6,
+                    "getAccount": 6,
+                    "getHolding": 6,
+                    "getPrice": 6,
+                    "getQuantity": 6,
+                    "isBuy": 6,
+                    "setHolding": 6,
+                    "isSell": 6,
+                    "setOrderStatus": 6,
+                    "setCompletionDate": 6
+                },
+                "value": 5.787
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "HoldingDataBean",
+                "method": {
+                    "HoldingDataBean [overloaded_#001]": 12,
+                    "hashCode": 12,
+                    "getQuote": 3,
+                    "getQuantity": 3,
+                    "setPurchaseDate": 3
+                },
+                "value": 4.496
+            },
+            {
+                "source": "TradeSLSBBean",
+                "target": "TradeAction",
+                "method": {
+                    "TradeAction [overloaded_#001]": 6,
+                    "orderCompleted": 6
+                },
+                "value": 3.484
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "Log",
+                "method": {
+                    "doTrace": 23
+                },
+                "value": 4.135
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "TradeConfig",
+                "method": {
+                    "getRunTimeMode": 23
+                },
+                "value": 4.135
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "QuoteDataBean",
+                "method": {
+                    "QuoteDataBean [overloaded_#003]": 41802,
+                    "getPrice": 41800,
+                    "getOpen": 41800,
+                    "getVolume": 41800
+                },
+                "value": 13.026
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "MarketSummaryDataBean",
+                "method": {
+                    "MarketSummaryDataBean [overloaded_#001]": 23
+                },
+                "value": 4.135
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "AccountProfileDataBean",
+                "method": {
+                    "AccountProfileDataBean [overloaded_#001]": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "HoldingDataBean",
+                "method": {
+                    "HoldingDataBean [overloaded_#001]": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "AccountDataBean",
+                "method": {
+                    "AccountDataBean [overloaded_#001]": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MarketSummarySingleton",
+                "target": "OrderDataBean",
+                "method": {
+                    "OrderDataBean [overloaded_#001]": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MarketSummaryDataBean",
+                "target": "QuoteDataBean",
+                "method": {
+                    "getSymbol": 70,
+                    "getPrice": 70,
+                    "getChange": 70,
+                    "getRandomInstance": 10
+                },
+                "value": 6.393
+            },
+            {
+                "source": "MarketSummaryDataBean",
+                "target": "FinancialUtils",
+                "method": {
+                    "computeGainPercent": 24
+                },
+                "value": 4.178
+            },
+            {
+                "source": "MarketSummaryDataBean",
+                "target": "TradeConfig",
+                "method": {
+                    "rndBigDecimal": 2,
+                    "rndQuantity": 1
+                },
+                "value": 2.098
+            },
+            {
+                "source": "QuoteDataBean",
+                "target": "TradeConfig",
+                "method": {
+                    "rndSymbol": 20,
+                    "rndFloat": 20,
+                    "rndBigDecimal": 40
+                },
+                "value": 5.382
+            },
+            {
+                "source": "TradeWebContextListener",
+                "target": "Log",
+                "method": {
+                    "trace [overloaded_#0011]": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "TradeWebContextListener",
+                "target": "TradeConfig",
+                "method": {
+                    "setRunTimeMode": 1,
+                    "setUseRemoteEJBInterface": 1,
+                    "setOrderProcessingMode": 1,
+                    "setWebInterface": 1,
+                    "setMAX_USERS": 1,
+                    "setMAX_QUOTES": 1,
+                    "setMarketSummaryInterval": 1,
+                    "setPrimIterations": 1,
+                    "setPublishQuotePriceChange": 1,
+                    "setPercentSentToWebsocket": 1,
+                    "setDisplayOrderAlerts": 1,
+                    "setLongRun": 1,
+                    "setTrace": 1,
+                    "setActionTrace": 1
+                },
+                "value": 3.639
+            },
+            {
+                "source": "TradeWebContextListener",
+                "target": "TradeDirect",
+                "method": {
+                    "init": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "TradeDirect",
+                "target": "Log",
+                "method": {
+                    "doTrace": 7076
+                },
+                "value": 9.864
+            },
+            {
+                "source": "TradeDirect",
+                "target": "MDBStats",
+                "method": {
+                    "getInstance": 2,
+                    "reset": 2
+                },
+                "value": 2.386
+            },
+            {
+                "source": "TradeDirect",
+                "target": "RunStatsDataBean",
+                "method": {
+                    "RunStatsDataBean": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "TradeDirect",
+                "target": "QuoteDataBean",
+                "method": {
+                    "QuoteDataBean [overloaded_#003]": 858,
+                    "getPrice": 1516,
+                    "getSymbol": 758
+                },
+                "value": 9.049
+            },
+            {
+                "source": "TradeDirect",
+                "target": "KeySequenceDirect",
+                "method": {
+                    "getNextID": 1666
+                },
+                "value": 8.418
+            },
+            {
+                "source": "TradeDirect",
+                "target": "AccountDataBean",
+                "method": {
+                    "AccountDataBean [overloaded_#001]": 908,
+                    "getAccountID": 1516
+                },
+                "value": 8.793
+            },
+            {
+                "source": "TradeDirect",
+                "target": "TradeConfig",
+                "method": {
+                    "getOrderFee": 758
+                },
+                "value": 7.63
+            },
+            {
+                "source": "TradeDirect",
+                "target": "OrderDataBean",
+                "method": {
+                    "OrderDataBean [overloaded_#001]": 2274,
+                    "getOrderFee": 758,
+                    "getOrderID": 2274,
+                    "getOrderType": 758,
+                    "getOrderStatus": 758,
+                    "getPrice": 758,
+                    "getQuantity": 758
+                },
+                "value": 10.028
+            },
+            {
+                "source": "TradeDirect",
+                "target": "AccountProfileDataBean",
+                "method": {
+                    "AccountProfileDataBean [overloaded_#001]": 758,
+                    "getUserID": 758
+                },
+                "value": 8.323
+            },
+            {
+                "source": "TradeDirect",
+                "target": "HoldingDataBean",
+                "method": {
+                    "HoldingDataBean [overloaded_#001]": 758,
+                    "getHoldingID": 758
+                },
+                "value": 8.323
+            },
+            {
+                "source": "OrdersAlertFilter",
+                "target": "TradeConfig",
+                "method": {
+                    "getDisplayOrderAlerts": 20
+                },
+                "value": 3.995
+            },
+            {
+                "source": "OrdersAlertFilter",
+                "target": "TradeAction",
+                "method": {
+                    "TradeAction [overloaded_#001]": 17,
+                    "getClosedOrders": 17
+                },
+                "value": 4.526
+            },
+            {
+                "source": "OrdersAlertFilter",
+                "target": "Log",
+                "method": {
+                    "doTrace": 17
+                },
+                "value": 3.833
+            },
+            {
+                "source": "OrdersAlertFilter",
+                "target": "TradeAppServlet",
+                "method": {
+                    "doGet": 19,
+                    "init": 1,
+                    "doPost": 1
+                },
+                "value": 4.044
+            },
+            {
+                "source": "TradeAppServlet",
+                "target": "TradeAction",
+                "method": {
+                    "TradeAction [overloaded_#001]": 20
+                },
+                "value": 3.995
+            },
+            {
+                "source": "TradeAppServlet",
+                "target": "TradeServletAction",
+                "method": {
+                    "doBuy": 3,
+                    "doAccount": 1,
+                    "doQuotes": 4,
+                    "doSell": 3,
+                    "doMarketSummary": 1,
+                    "doWelcome": 1,
+                    "doPortfolio": 3,
+                    "doAccountUpdate": 1,
+                    "doLogout": 1,
+                    "doRegister": 1,
+                    "doLogin": 1
+                },
+                "value": 3.995
+            },
+            {
+                "source": "TradeAppServlet",
+                "target": "MarketSummaryDataBean",
+                "method": {
+                    "getRandomInstance": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "TradeAppServlet",
+                "target": "Log",
+                "method": {
+                    "log [overloaded_#001]": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "TradeAction",
+                "method": {
+                    "buy": 3,
+                    "getAccountData": 4,
+                    "getAccountProfileData": 2,
+                    "TradeAction [overloaded_#001]": 20,
+                    "getQuote": 26,
+                    "sell [overloaded_#003]": 3,
+                    "getHoldings": 5,
+                    "updateAccountProfile": 1,
+                    "logout": 1,
+                    "register [overloaded_#005]": 1,
+                    "login": 2
+                },
+                "value": 5.219
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "TradeConfig",
+                "method": {
+                    "getPage": 20,
+                    "getLongRun": 2
+                },
+                "value": 4.091
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "OrderDataBean",
+                "method": {
+                    "getOrderID": 24,
+                    "getOrderType": 18,
+                    "getQuantity": 18,
+                    "getSymbol": 18,
+                    "getOrderStatus": 12,
+                    "getOpenDate": 12,
+                    "getCompletionDate": 12,
+                    "getOrderFee": 12
+                },
+                "value": 5.836
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "FinancialUtils",
+                "method": {
+                    "printQuoteLink": 38,
+                    "printGainHTML": 31,
+                    "computeGainPercent": 25,
+                    "printGainPercentHTML": 25,
+                    "computeHoldingsTotal": 2,
+                    "computeGain": 2
+                },
+                "value": 5.812
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "AccountDataBean",
+                "method": {
+                    "getCreationDate": 4,
+                    "getLastLogin": 2,
+                    "getAccountID": 5,
+                    "getLoginCount": 4,
+                    "getBalance": 4,
+                    "getProfileID": 4,
+                    "getLogoutCount": 2,
+                    "getOpenBalance": 4
+                },
+                "value": 4.367
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "AccountProfileDataBean",
+                "method": {
+                    "getUserID": 2,
+                    "getFullName": 2,
+                    "getPassword": 4,
+                    "getAddress": 2,
+                    "getCreditCard": 2,
+                    "getEmail": 2,
+                    "AccountProfileDataBean [overloaded_#001]": 1
+                },
+                "value": 3.708
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "QuoteDataBean",
+                "method": {
+                    "getSymbol": 46,
+                    "getCompanyName": 20,
+                    "getVolume": 20,
+                    "getLow": 20,
+                    "getHigh": 20,
+                    "getOpen": 40,
+                    "getPrice": 52,
+                    "getChange": 20
+                },
+                "value": 6.472
+            },
+            {
+                "source": "TradeServletAction",
+                "target": "HoldingDataBean",
+                "method": {
+                    "getQuoteID": 18,
+                    "getPurchasePrice": 12,
+                    "getQuantity": 18,
+                    "getHoldingID": 12,
+                    "getPurchaseDate": 6
+                },
+                "value": 5.189
+            },
+            {
+                "source": "AccountDataBean",
+                "target": "AccountProfileDataBean",
+                "method": {
+                    "getPassword": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "OrderDataBean",
+                "target": "QuoteDataBean",
+                "method": {
+                    "getSymbol": 21
+                },
+                "value": 4.044
+            },
+            {
+                "source": "HoldingDataBean",
+                "target": "QuoteDataBean",
+                "method": {
+                    "getSymbol": 18
+                },
+                "value": 3.89
+            },
+            {
+                "source": "TradeConfigServlet",
+                "target": "TradeConfig",
+                "method": {
+                    "getPage": 6,
+                    "useRemoteEJBInterface": 9,
+                    "getMAX_USERS": 10,
+                    "getMAX_QUOTES": 9,
+                    "getMarketSummaryInterval": 9,
+                    "getPrimIterations": 9,
+                    "getPublishQuotePriceChange": 9,
+                    "getPercentSentToWebsocket": 9,
+                    "getDisplayOrderAlerts": 9,
+                    "getLongRun": 9,
+                    "getActionTrace": 9,
+                    "getTrace": 9,
+                    "setRunTimeMode": 3,
+                    "setDisplayOrderAlerts": 6,
+                    "setOrderProcessingMode": 3,
+                    "setWebInterface": 3,
+                    "setMAX_USERS": 3,
+                    "setMAX_QUOTES": 3,
+                    "setMarketSummaryInterval": 3,
+                    "setPrimIterations": 3,
+                    "setPublishQuotePriceChange": 3,
+                    "setPercentSentToWebsocket": 3,
+                    "setLongRun": 3
+                },
+                "value": 5.955
+            },
+            {
+                "source": "TradeConfigServlet",
+                "target": "TradeBuildDB",
+                "method": {
+                    "TradeBuildDB [overloaded_#001]": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "TradeConfigServlet",
+                "target": "Log",
+                "method": {
+                    "setTrace": 3,
+                    "setActionTrace": 3
+                },
+                "value": 2.791
+            },
+            {
+                "source": "TradeConfigServlet",
+                "target": "TradeDirect",
+                "method": {
+                    "TradeDirect [overloaded_#001]": 1,
+                    "checkDBProductName": 1
+                },
+                "value": 1.693
+            },
+            {
+                "source": "PingServletCDIBeanManagerViaJNDI",
+                "target": "PingInterceptor",
+                "method": {
+                    "methodInterceptor": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "PingInterceptor",
+                "target": "PingCDIBean",
+                "method": {
+                    "getBeanMangerViaJNDI": 1,
+                    "hello": 1
+                },
+                "value": 1.693
+            },
+            {
+                "source": "TradeBuildDB",
+                "target": "TradeDirect",
+                "method": {
+                    "TradeDirect [overloaded_#001]": 2,
+                    "resetTrade": 1,
+                    "releaseConn": 1,
+                    "createQuote": 100,
+                    "register": 150,
+                    "buy": 758,
+                    "recreateDBTables": 1
+                },
+                "value": 7.92
+            },
+            {
+                "source": "TradeBuildDB",
+                "target": "TradeConfig",
+                "method": {
+                    "getMAX_QUOTES": 102,
+                    "rndPrice": 100,
+                    "getMAX_USERS": 152,
+                    "rndFullName": 150,
+                    "rndEmail": 150,
+                    "rndAddress": 150,
+                    "rndCreditCard": 150,
+                    "rndInt": 300,
+                    "getMAX_HOLDINGS": 150,
+                    "rndSymbol": 758,
+                    "rndQuantity": 758
+                },
+                "value": 8.979
+            },
+            {
+                "source": "TradeBuildDB",
+                "target": "AccountDataBean",
+                "method": {
+                    "getAccountID": 3
+                },
+                "value": 2.098
+            },
+            {
+                "source": "TradeBuildDB",
+                "target": "Log",
+                "method": {
+                    "doTrace": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "MDBStats",
+                "target": "TimerStat",
+                "method": {
+                    "getMax": 6,
+                    "getMin": 6,
+                    "getCount": 6,
+                    "setCount": 6,
+                    "getTotalTime": 6,
+                    "setTotalTime": 6,
+                    "setMin": 4,
+                    "setMax": 1
+                },
+                "value": 4.713
+            },
+            {
+                "source": "KeySequenceDirect",
+                "target": "KeyBlock",
+                "method": {
+                    "KeyBlock [overloaded_#001]": 3,
+                    "listIterator": 1666,
+                    "$KeyBlockIterator$hasNext": 1666,
+                    "$KeyBlockIterator$next": 1666
+                },
+                "value": 9.517
+            },
+            {
+                "source": "KeySequenceDirect",
+                "target": "Log",
+                "method": {
+                    "doTrace": 1666
+                },
+                "value": 8.418
+            },
+            {
+                "source": "PingServlet2Servlet",
+                "target": "PingBean",
+                "method": {
+                    "setMsg": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "PingServlet2Servlet",
+                "target": "PingServlet2ServletRcv",
+                "method": {
+                    "init": 1,
+                    "doGet": 1
+                },
+                "value": 1.693
+            },
+            {
+                "source": "PingServlet2ServletRcv",
+                "target": "PingBean",
+                "method": {
+                    "getMsg": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "DTStreamer3MDB",
+                "target": "Log",
+                "method": {
+                    "doTrace": 13
+                },
+                "value": 3.564
+            },
+            {
+                "source": "DTStreamer3MDB",
+                "target": "MDBStats",
+                "method": {
+                    "addTiming": 6,
+                    "getInstance": 1
+                },
+                "value": 2.945
+            },
+            {
+                "source": "DTStreamer3MDB",
+                "target": "TimerStat",
+                "method": {
+                    "getCount": 6
+                },
+                "value": 2.791
+            },
+            {
+                "source": "DTStreamer3MDB",
+                "target": "TradeConfig",
+                "method": {
+                    "getMAX_QUOTES": 6,
+                    "getPercentSentToWebsocket": 6
+                },
+                "value": 3.484
+            },
+            {
+                "source": "DTStreamer3MDB",
+                "target": "MarketSummaryWebSocket",
+                "method": {
+                    "onJMSMessage": 6
+                },
+                "value": 2.791
+            },
+            {
+                "source": "PingServletCDI",
+                "target": "PingInterceptor",
+                "method": {
+                    "methodInterceptor": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "PingServletCDI",
+                "target": "PingEJBLocalDecorator",
+                "method": {
+                    "getMsg": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "PingEJBLocalDecorator",
+                "target": "PingEJBLocal",
+                "method": {
+                    "getMsg": 1
+                },
+                "value": 1.0
+            }
+        ],
+        "overview": {
+            "nodes": [
+                {
+                    "name": "partition2",
+                    "group": 0,
+                    "category": "partition2",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "market_summary",
+                        "Unknown",
+                        "market_summary_glossary",
+                        "logoff",
+                        "trade_buy",
+                        "trade_sell",
+                        "repopulate_db_tables",
+                        "recreate_db_tables"
+                    ]
+                },
+                {
+                    "name": "Utility",
+                    "group": 1,
+                    "category": "Utility",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "market_summary",
+                        "init",
+                        "trade_buy",
+                        "Unknown",
+                        "account",
+                        "trade_sell",
+                        "ping_servlet_cdi_manager",
+                        "register",
+                        "ping_servlet_cdi",
+                        "repopulate_db_tables",
+                        "config",
+                        "primitives",
+                        "logoff",
+                        "login",
+                        "market_summary_glossary",
+                        "recreate_db_tables",
+                        "ping_servlet_writer"
+                    ]
+                },
+                {
+                    "name": "partition1",
+                    "group": 2,
+                    "category": "partition1",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "market_summary",
+                        "trade_buy",
+                        "account",
+                        "trade_sell",
+                        "Unknown",
+                        "logoff",
+                        "register",
+                        "login",
+                        "market_summary_glossary",
+                        "ping_servlet_cdi_manager",
+                        "ping_servlet_cdi",
+                        "repopulate_db_tables",
+                        "primitives",
+                        "init",
+                        "config",
+                        "ping_servlet_writer",
+                        "recreate_db_tables"
+                    ]
+                },
+                {
+                    "name": "partition3",
+                    "group": 3,
+                    "category": "partition3",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "init",
+                        "Unknown",
+                        "repopulate_db_tables",
+                        "recreate_db_tables",
+                        "trade_buy",
+                        "trade_sell",
+                        "config"
+                    ]
+                },
+                {
+                    "name": "partition0",
+                    "group": 4,
+                    "category": "partition0",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "init",
+                        "Unknown",
+                        "ping_servlet2_include",
+                        "ping_servlet",
+                        "explicit_gc",
+                        "ping_servlet_writer"
+                    ]
+                },
+                {
+                    "name": "partition4",
+                    "group": 5,
+                    "category": "partition4",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "ping_servlet_cdi_manager",
+                        "ping_servlet_cdi"
+                    ]
+                },
+                {
+                    "name": "Unobserved",
+                    "group": 6,
+                    "category": "Unobserved",
+                    "filepath": "Cluster",
+                    "semantics": []
+                }
+            ],
+            "links": [
+                {
+                    "source": "partition2",
+                    "target": "Utility",
+                    "value": 2.033
+                },
+                {
+                    "source": "partition2",
+                    "target": "partition1",
+                    "value": 1.601
+                },
+                {
+                    "source": "Utility",
+                    "target": "partition3",
+                    "value": 1.756
+                },
+                {
+                    "source": "partition1",
+                    "target": "Utility",
+                    "value": 2.784
+                },
+                {
+                    "source": "partition1",
+                    "target": "partition3",
+                    "value": 1.836
+                },
+                {
+                    "source": "partition3",
+                    "target": "Utility",
+                    "value": 2.658
+                },
+                {
+                    "source": "partition3",
+                    "target": "partition2",
+                    "value": 1.242
+                },
+                {
+                    "source": "partition3",
+                    "target": "partition1",
+                    "value": 2.548
+                }
+            ]
+        }
+    }
+}

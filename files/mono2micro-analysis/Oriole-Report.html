@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-us">
+<style type="text/css">a {text-decoration: none}</style>
+<style type="text/css">a:hover {text-decoration: underline}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="expires" content="0">
+<title> Mono2Micro Partition Business Use Case Analysis - Application   </title>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
+<script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+ 
+
+<style>  
+	.report_title { 
+	  padding-top: 2%;
+	  padding-bottom: 1%;
+	  display: block;
+	  overflow: hidden; 
+	  font-size: 30px;
+	  color: black;
+	  position: relative;
+  	  left: 10%;
+	  font-weight: bolder;	  
+	}
+	.version { 
+	  padding-top: 2%;
+	  padding-bottom: 1%;
+	  display: block;
+	  overflow: hidden; 
+	  font-size: 15px;
+	  color: black;
+	  position: relative;
+  	  left: 10%;
+	  
+	}
+	.collapsible {  
+	  cursor: pointer; 
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  border: none;
+	  text-align: left;
+	  outline: none; 
+	  font-size: 20px;  
+	  position: relative;
+  	  left: 25%;	
+	} 
+
+
+	.summary {  
+	  background-color: whitesmoke;
+	  color: black;
+	  cursor: pointer; 
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  border: none;
+	  text-align: left;
+	  outline: none; 
+	  font-size: 20px;  
+	  position: relative;
+  	  left: 25%;	
+	}
+
+	.jclass {  
+	  display: list-item;
+	  overflow: hidden; 
+	  font-size: 15px;
+	  color: black;
+	  position: relative;   
+	  font-weight: bold;
+	}
+
+	.jfunction {  
+	  display: list-item;
+	  overflow: hidden; 
+	  font-size: 15px;
+	  color: black;
+	  position: relative;  
+	  padding-left: 2%;  
+	}	
+
+	.partition_header{   
+	  background-color: whitesmoke;
+	  color: black;
+	  cursor: pointer;
+	  padding-left: 2%;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	  width: 80%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 20px;
+	  font-weight: bold;  
+	  position: relative;
+  	  left: 10%;
+	}	
+
+	.summary_title{     
+	  cursor: pointer; 
+	  padding-top: 15px;
+	  padding-bottom: 15px;  
+	  text-align: left;  
+	  font-size: 20px;
+	  
+	}	
+
+	.extra {
+		background-color: #e6ecff;
+		color: black;
+
+	}
+
+	.arrow { 
+		color: black;
+	}
+</style>
+
+</head>
+
+<body>
+
+	<div>
+		<h1 class="report_title"> Mono2Micro Business Use Case Partition Analysis - Application </h1> 
+		<br>
+	</div>  
+
+	<div class="bx--row">
+		<div class="bx--col bx--col-lg-8">
+		  <div class="bx--tile  partition_header"> <h4> Summary </h4> </div>
+		</div>
+	</div>
+ 
+	<ul data-accordion class="bx--accordion bx--col-lg-8">
+		<li data-accordion-item class="bx--accordion__item collapsible">
+			<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+				<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+				<div class="bx--accordion__title "> Business Use Cases per Partition </div>
+			</button>
+
+			<div id="pane1" class="bx--accordion__content">
+			<br>  
+				<section class="bx--structured-list" >
+					<div class="bx--structured-list-thead">
+						<div class="bx--structured-list-row bx--structured-list-row--header-row">
+							<div class="bx--structured-list-th">Partition Name</div>
+							<div class="bx--structured-list-th"># of Classes </div>
+							<div class="bx--structured-list-th"># of Business Use Cases</div>
+							<div class="bx--structured-list-th">Business Use Cases</div>
+						</div>
+					</div>
+				 
+					<div class="bx--structured-list-tbody">
+
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#Utility"> Utility </a></div>
+							<div class="bx--structured-list-td"> 4 </div>
+							<div class="bx--structured-list-td"> 17 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> account </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> config </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> init </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> login </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> logoff </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> market_summary </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> market_summary_glossary </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_cdi </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_cdi_manager </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_writer </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> primitives </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> recreate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> register </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> repopulate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_buy </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_sell </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition4"> partition4 </a></div>
+							<div class="bx--structured-list-td"> 6 </div>
+							<div class="bx--structured-list-td"> 2 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_cdi </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_cdi_manager </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition0"> partition0 </a></div>
+							<div class="bx--structured-list-td"> 7 </div>
+							<div class="bx--structured-list-td"> 6 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> explicit_gc (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> init </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet2_include (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_writer </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition3"> partition3 </a></div>
+							<div class="bx--structured-list-td"> 7 </div>
+							<div class="bx--structured-list-td"> 7 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> config </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> init </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> recreate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> repopulate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_buy </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_sell </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition2"> partition2 </a></div>
+							<div class="bx--structured-list-td"> 7 </div>
+							<div class="bx--structured-list-td"> 8 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> logoff </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> market_summary </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> market_summary_glossary </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> recreate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> repopulate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_buy </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_sell </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition1"> partition1 </a></div>
+							<div class="bx--structured-list-td"> 11 </div>
+							<div class="bx--structured-list-td"> 17 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> account </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> config </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> init </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> login </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> logoff </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> market_summary </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> market_summary_glossary </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_cdi </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_cdi_manager </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> ping_servlet_writer </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> primitives </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> recreate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> register </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> repopulate_db_tables </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_buy </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> trade_sell </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#Unobserved"> Unobserved </a></div>
+							<div class="bx--structured-list-td"> 60 </div>
+							<div class="bx--structured-list-td"> 1 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unobserved </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						
+
+					</div>
+				</section>
+			</div>
+		</li>
+	</ul>
+ 
+   
+
+	 
+
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition0"> <h4> partition0 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 7 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ExplicitGC  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> explicit_gc </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Servlet  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet2_include </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingBean  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet2_include </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2ServletRcv  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet2_include </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServletWriter  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> JSFLoginFilter  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition1"> <h4> partition1 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 11 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderDataBean  </div>
+								<div class="bx--structured-list-td"> 5 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeAppServlet  </div>
+								<div class="bx--structured-list-td"> 8 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeServletAction  </div>
+								<div class="bx--structured-list-td"> 8 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> AccountProfileDataBean  </div>
+								<div class="bx--structured-list-td"> 8 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> AccountDataBean  </div>
+								<div class="bx--structured-list-td"> 8 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrdersAlertFilter  </div>
+								<div class="bx--structured-list-td"> 9 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeAction  </div>
+								<div class="bx--structured-list-td"> 9 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeSLSBBean  </div>
+								<div class="bx--structured-list-td"> 9 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MarketSummarySingleton  </div>
+								<div class="bx--structured-list-td"> 15 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+									<li class="jfunction"> primitives </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MarketSummaryDataBean  </div>
+								<div class="bx--structured-list-td"> 15 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+									<li class="jfunction"> primitives </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteDataBean  </div>
+								<div class="bx--structured-list-td"> 15 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+									<li class="jfunction"> primitives </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition2"> <h4> partition2 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 7 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DTStreamer3MDB  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TimerStat  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ActionMessage  </div>
+								<div class="bx--structured-list-td"> 4 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ActionDecoder  </div>
+								<div class="bx--structured-list-td"> 4 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MDBStats  </div>
+								<div class="bx--structured-list-td"> 4 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> RecentStockChangeList  </div>
+								<div class="bx--structured-list-td"> 6 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MarketSummaryWebSocket  </div>
+								<div class="bx--structured-list-td"> 6 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition3"> <h4> partition3 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 7 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> RunStatsDataBean  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> KeyBlock  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeWebContextListener  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeBuildDB  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeConfigServlet  </div>
+								<div class="bx--structured-list-td"> 3 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeDirect  </div>
+								<div class="bx--structured-list-td"> 3 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> HoldingDataBean  </div>
+								<div class="bx--structured-list-td"> 4 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition4"> <h4> partition4 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 6 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServletCDI  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingEJBLocalDecorator  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingEJBLocal  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServletCDIBeanManagerViaJNDI  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingInterceptor  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingCDIBean  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="Unobserved"> <h4> Unobserved </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 60 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> JsonMessage  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> JsonEncoder  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> JsonDecoder  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingSession3Object  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet30Async  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingReentryServlet  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2IncludeRcv  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServletLargeContentLength  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingWebSocketJson  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingSession2  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingJDBCWrite  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Jsp  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2JNDI  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingSession3  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingWebSocketBinary  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingCDIJSFBean  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingSession1  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingManagedThread  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet31AsyncRead  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingWebSocketTextAsync  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingJDBCRead  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingWebSocketTextSync  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingJSONP  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet31Async  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingJDBCRead2JSP  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Include  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingUpgradeServlet  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingManagedExecutor  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServletSetContentLength  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServletCDIBeanManagerViaCDICurrent  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2DB  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2PDF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Entity  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2MDBQueue  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Session2Entity2JSP  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Session2CMROne2Many  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2TwoPhase  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2MDBTopic  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Session2EntityCollection  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Session2Entity  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2SessionRemote  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2SessionLocal  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingServlet2Session2CMROne2One  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> HoldingData  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MarketSummaryJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> LoginValidator  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteData  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeConfigJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PortfolioJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderDataJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> AccountDataJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeActionProducer  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeAppJSF  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ExternalContextProducer  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderData  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TestServlet  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeScenarioServlet  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CompleteOrderThread  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DTBroker3MDB  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="Utility"> <h4> Utility </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 4 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> KeySequenceDirect  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> FinancialUtils  </div>
+								<div class="bx--structured-list-td"> 16 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+									<li class="jfunction"> primitives </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TradeConfig  </div>
+								<div class="bx--structured-list-td"> 17 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+									<li class="jfunction"> primitives </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Log  </div>
+								<div class="bx--structured-list-td"> 17 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> account </li>
+								
+									<li class="jfunction"> config </li>
+								
+									<li class="jfunction"> init </li>
+								
+									<li class="jfunction"> login </li>
+								
+									<li class="jfunction"> logoff </li>
+								
+									<li class="jfunction"> market_summary </li>
+								
+									<li class="jfunction"> market_summary_glossary </li>
+								
+									<li class="jfunction"> ping_servlet_cdi </li>
+								
+									<li class="jfunction"> ping_servlet_cdi_manager </li>
+								
+									<li class="jfunction"> ping_servlet_writer </li>
+								
+									<li class="jfunction"> primitives </li>
+								
+									<li class="jfunction"> recreate_db_tables </li>
+								
+									<li class="jfunction"> register </li>
+								
+									<li class="jfunction"> repopulate_db_tables </li>
+								
+									<li class="jfunction"> trade_buy </li>
+								
+									<li class="jfunction"> trade_sell </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	
+	 <div class="bx--structured-list-td bx--accordion__title version"> aipl_version: v2.0.0r30 </div>
+</body>
+</html>
+
+
+ 

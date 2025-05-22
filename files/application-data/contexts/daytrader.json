@@ -1,0 +1,113 @@
+[
+    {
+        "offset": 0,
+        "session": [
+            {
+                "STOP": 1583517088198,
+                "LABEL": "init",
+                "START": 1583517056909
+            },
+            {
+                "STOP": 1583517112377,
+                "LABEL": "config",
+                "START": 1583517093818
+            },
+            {
+                "STOP": 1583517142377,
+                "LABEL": "recreate_db_tables",
+                "START": 1583517125344
+            },
+            {
+                "STOP": 1583517171697,
+                "LABEL": "repopulate_db_tables",
+                "START": 1583517151554
+            },
+            {
+                "STOP": 1583517186682,
+                "LABEL": "login",
+                "START": 1583517181657
+            },
+            {
+                "STOP": 1583517206752,
+                "LABEL": "account",
+                "START": 1583517191866
+            },
+            {
+                "STOP": 1583517236554,
+                "LABEL": "trade_buy",
+                "START": 1583517216497
+            },
+            {
+                "STOP": 1583517255712,
+                "LABEL": "trade_sell",
+                "START": 1583517241813
+            },
+            {
+                "STOP": 1583517272438,
+                "LABEL": "market_summary",
+                "START": 1583517263748
+            },
+            {
+                "STOP": 1583517285751,
+                "LABEL": "market_summary_glossary",
+                "START": 1583517280980
+            },
+            {
+                "STOP": 1583517304269,
+                "LABEL": "logoff",
+                "START": 1583517298800
+            },
+            {
+                "STOP": 1583517328815,
+                "LABEL": "register",
+                "START": 1583517307646
+            },
+            {
+                "STOP": 1583517344390,
+                "LABEL": "primitives",
+                "START": 1583517336477
+            },
+            {
+                "STOP": 1583517353624,
+                "LABEL": "ping_html",
+                "START": 1583517348639
+            },
+            {
+                "STOP": 1583517370300,
+                "LABEL": "explicit_gc",
+                "START": 1583517364972
+            },
+            {
+                "STOP": 1583517387910,
+                "LABEL": "ping_servlet",
+                "START": 1583517382852
+            },
+            {
+                "STOP": 1583517403878,
+                "LABEL": "ping_servlet_cdi",
+                "START": 1583517396017
+            },
+            {
+                "STOP": 1583517421205,
+                "LABEL": "ping_servlet_cdi_manager",
+                "START": 1583517414907
+            },
+            {
+                "STOP": 1583517440708,
+                "LABEL": "ping_servlet_writer",
+                "START": 1583517435693
+            },
+            {
+                "STOP": 1583517459900,
+                "LABEL": "ping_servlet2_include",
+                "START": 1583517454949
+            },
+            {
+                "STOP": 1583517475710,
+                "LABEL": "ping_jsp",
+                "START": 1583517469756
+            }
+        ],
+        "appserver": ""
+    }
+]
