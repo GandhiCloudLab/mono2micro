@@ -194,7 +194,7 @@ You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/
 
 2. Open the  url http://localhost:3000 in ther browser.
 
-3. Drag and Drop `mono2micro/application-data/mono2micro-output/oriole/final_graph.json` file
+3. Drag and Drop `Mono2Micro-Example/daytrader/mono2micro-analysis/oriole/final_graph.json` file
 
 <img src="images/img-21.png">
 
@@ -250,7 +250,7 @@ You can see the detailed IBM documentation <a href="https://www.ibm.com/docs/en/
 
 </details>
 
-### 6. Microservices Code Generation
+## 6. Microservices Code Generation
 
 <details><summary>CLICK ME</summary>
 
